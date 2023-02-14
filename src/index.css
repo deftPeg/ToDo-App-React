@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* import font from google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+/* declare font for entire body, body height and width */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(135deg, rgb(171, 28, 196), rgba(28, 16, 90, 1));
+}
+
+/* style window holding the entire to do list */
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 30rem;
+  min-width: 15rem;
+  min-height: 20rem;
+  background:white;
+  text-align: center;
+  margin: 9rem auto;
+  border-radius: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+/* style title of todo list */
+h1 {
+  margin-bottom: 1rem;
+  color: rgb(78, 76, 79);
+  font-size: 1.2rem;
+}
+
+/* give styling when task is marked with complete className */
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+/* entire input field including button */
+.todo-form {
+  margin-bottom: 2.5rem;
+}
+
+/* style original input task field (not it's submit button */
+.todo-input {
+  padding: 0.75rem 0.8rem 0.78rem 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: .13rem solid #5d0cff;
+  outline: none;
+  width: 65%;
+  background: transparent;
+  color: rgb(80, 82, 84);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* style the text in the input fields input area prompting user as to what the input should be */
+.todo-input::placeholder {
+  color: rgb(152, 144, 144);
+}
+
+/* style add task button */
+.todo-button {
+  padding: 0.97rem;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  outline: none;
+  background-image: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+/* style the input field prompted from the edit icon when editing an input */
+.todo-input.edit {
+  border: .13rem solid #149fff;
+  padding: 0.7rem 0.78rem 0.8rem 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+/* style the edit forms update button */
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1rem;
+}
+
+/* style the container that holds the list of todos */
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+/* style the row within the container holding the list of todos */
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.1rem auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 170, .8) 0%,
+    rgba(250, 0, 135, .8) 100%
+  );
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: 90%;
+  text-align: left;
+}
+
+/* alternating between 4 colours for each row of todos within the list.  */
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(179, 63, 242, 0.9) 0%,
+    rgba(105, 48, 176, 0.9) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(69, 12, 255, .8) 0%,
+    rgba(96, 0, 250, .8) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, .9) 0%,
+    rgba(17, 122, 255, .9) 100%
+  );
+
+}
+
+/* style the react icons for delete and edit */
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+/* style the todo svg icon at the top of the todo app window */
+.todo-image{
+  width:50%;
+  margin-top: 0.8rem;
+}
