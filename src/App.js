@@ -1,28 +1,13 @@
-// import React from 'react';
-// import './index.css';
-
-
-// function App() {
-//   return (
-//     <div className="App">
-      
-//     </div>
-//   );
-// }
-
-// export default App;
-
-import React from 'react';
-import './index.css';
-import TodoList from './components/TodoList';
+import Todo from "./components/Todo";
+import "./App.css";
 
 function App() {
   return (
-    <div className='todo-app'>
-      <TodoList />
+    <div className="container">
+      {/* entry point for the app. Will call Todo component to display the form */}
+      <Todo />
     </div>
   );
 }
 
 export default App;
-

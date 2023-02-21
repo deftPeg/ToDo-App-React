@@ -4,7 +4,7 @@ import React from 'react';
 let TodoImage = ()=>{
   return (
     <div>
-  <img src={require('../assets/todoICON-01.svg').default} alt='mySvgImage' className = "todo-image"/>
+  <img src={require('../assets/todoICON-01.svg').default} alt='todoImage' className = "todo-image"/>
 </div>
   );
 }

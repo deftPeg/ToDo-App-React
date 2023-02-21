@@ -1,0 +1,202 @@
+/*css for app.js */
+/* style window holding the entire to do list */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 30rem;
+  min-width: 15rem;
+  min-height: 15rem;
+  background:white;
+  text-align: center;
+  margin: 5.5rem auto;
+  border-radius: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+
+/* css for header / title */
+.header{
+margin: 0;
+font-size: 1.5rem;
+color: var(--secondary);
+}
+
+/* give styling when task is marked with complete className */
+.todo-complete{
+  text-decoration: line-through;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3rem auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(223, 4, 146, 0.918) 0%,
+    rgba(199, 4, 108, 0.88) 100%
+  );
+  box-shadow: var(--shadow);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: 90%;
+  text-align: left;
+  }
+
+/* css for TodoForm.jsx */
+.todo_form{
+  margin-bottom: 2rem;
+}
+
+/* add todo input box */
+/* style original input task field (not it's submit button */
+.input-add{
+  padding: 0.7rem 0.8rem 0.8rem 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 0.13rem solid var(--secondary);
+  outline: none;
+  width: 65%;
+  background: transparent;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;    
+}
+
+/* style the text in the input fields input area prompting user as to what the input should be */
+.input-add::placeholder {
+  color: var(--grey);
+  font-weight: 500;
+}
+
+/* style the edit forms update button */
+.input-edit{
+  padding: 0.88rem 0.8rem 0.83rem 1rem; 
+  border-radius: 5px;
+  border: 2px solid var(--secondary);
+  box-shadow: var(--shadow);
+  width: 70%;
+  background: transparent;
+  color:black;
+}
+
+/* style add / edit task button */
+.edit-button,
+.add-button{
+  padding: 1rem;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  outline: none;
+background: var(--secondary);
+color: #fff;
+margin-left: -0.5rem;
+}
+
+.edit-button{
+  box-shadow: var(--shadow);
+}
+
+/* style the row within the container holding the list of todos */
+.todo-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0.3rem auto;
+width: 90%;
+color: #fff;
+opacity: 0.9;
+background: linear-gradient(
+  90deg,
+  rgba(189, 25, 164, 0.92) 0%,
+  rgba(199, 4, 186, 0.88) 100%
+);
+box-shadow: var(--shadow);
+padding: 0.8rem;
+border-radius: 0.5rem;
+text-align: left;
+}
+
+/* alternating between 2 colours for each row of todos within the list.  */
+.todo-container:nth-child(2n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 84, 183, 0.918) 0%,
+    rgba(22, 51, 119, 0.88) 100%
+  );
+}
+
+/* apply the same alternating to the complete items */
+.todo-complete:nth-child(2n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 84, 183, 0.918) 0%,
+    rgba(22, 51, 119, 0.88) 100%
+  );
+}
+
+
+/* style the react icons for delete and edit */
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;;
+  color: #fff;
+  margin-left: 1rem;
+ 
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+/* style the todo svg icon at the top of the todo app window */
+.todo-image{
+  width: 20rem;
+  margin-top: -7rem;
+  margin-bottom: -2rem;
+}
+
+/* CSS FOR MOBILE DEVICES */
+@media only screen and (max-width: 600px){
+
+/* container holding todo app */
+.container{
+  width: 90vw;
+}
+
+/* image at top */
+.todo-image{
+  width: 13rem;
+  margin-top: -7rem;
+  margin-bottom: -1rem;
+}
+
+/* add input form */
+.input-add{
+  padding: 0.85rem 0.8rem 0.9rem 1rem;
+  width: 75%;
+  font-size: 0.8rem;    
+}
+
+/* style the row within the container holding the list of todos */
+.todo-container{
+  margin: 0.3rem auto;
+  color: #fff;
+  opacity: 0.9;
+  width: 85%;
+  box-shadow: var(--shadow);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  }
+
+
+}
+
