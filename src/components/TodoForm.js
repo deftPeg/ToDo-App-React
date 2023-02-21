@@ -1,3 +1,5 @@
+// useState: allows us to track state in a function component
+// The useRef Hook is used to store a mutable value that does not cause a re-render when updated.
 import React, { useState, useRef } from "react";
 
 

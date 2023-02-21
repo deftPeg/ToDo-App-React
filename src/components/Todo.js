@@ -1,3 +1,4 @@
+// useState: allows us to track state in a function component
 import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
@@ -46,8 +47,8 @@ function Todo() {
 
       </div>
 
-      {/*once we display header to the webpage 
-      we will pass the function as props to TodoForm and TodoList to display the data to user*/}
+      {/*once header displayed to the web page,
+      pass the function as props to TodoForm and TodoList to display the data to user*/}
 
       <TodoForm onSubmit={addTodo} />
       <TodoList
