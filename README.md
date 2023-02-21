@@ -18,27 +18,26 @@ My first react front-end project. A todo app
 
 <hr>
 
-<!-- TO UN COMMENT LATER -->
 
-<!-- <br>
+
+<br>
  <!-- Screenshot -->
-  <!-- <a href="https://deftpegjstodoapp.netlify.app/" target="_blank" rel="noreferrer"> <img align="right" src="Images/JStoDoAppScreenShot.png" alt="JS Todo App Home Screen" height="200"/> </a>  -->
+  <a href="https://deftpegreacttodofirst.netlify.app/" target="_blank" rel="noreferrer"> <img align="right" src="./src/assets/reactTodoFirstScreenShot.png" alt="JS Todo App Home Screen" height="200"/> </a> 
 
-<!-- <br> -->
-<!-- <br> -->
+<br>
+<br>
 
    <!-- Online link -->
-   <!-- <div name = "Online presence">  -->
-<!-- <h2 align="left">👀 View online:</h2> -->
-<!-- <br> -->
-<!-- <a href="https://deftpegjstodoapp.netlify.app/" target="_blank" rel="noreferrer"> -->
-<!-- Take me to the website, </a> -->
-<!-- or alternately, click on the image 👉 -->
+   <div name = "Online presence"> 
+<h2 align="left">👀 View online:</h2>
+<br>
+<a href="https://deftpegreacttodofirst.netlify.app/" target="_blank" rel="noreferrer">
+Take me to the website, </a>
+or alternately, click on the image 👉
 
-<!-- </div> --> 
+</div> 
 
 
-<!-- END OF UNCOMMENT LATER -->
 
 
 <br>
