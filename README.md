@@ -5,7 +5,6 @@ My first react front-end project. A todo app
 <hr>
 
 <br>
-<br>
 <!-- Technologies used -->
 <div name = "Technologies"> 
 <h2 align="left">🛠 Languages and Tools:</h2>
@@ -22,10 +21,10 @@ My first react front-end project. A todo app
 
 <br>
  <!-- Screenshot -->
-  <a href="https://deftpegreacttodofirst.netlify.app/" target="_blank" rel="noreferrer"> <img align="right" src="./src/assets/reactTodoFirstScreenShot.png" alt="JS Todo App Home Screen" height="200"/> </a> 
+  <a href="https://deftpegreacttodofirst.netlify.app/" target="_blank" rel="noreferrer"> <img align="right" src="./src/assets/reactTodoFirstScreenShot.png" alt="JS Todo App Home Screen" height="300"/> </a> 
 
 <br>
-<br>
+
 
    <!-- Online link -->
    <div name = "Online presence"> 
@@ -34,11 +33,19 @@ My first react front-end project. A todo app
 <a href="https://deftpegreacttodofirst.netlify.app/" target="_blank" rel="noreferrer">
 Take me to the website, </a>
 or alternately, click on the image 👉
+<br>
+<br>
 
 </div> 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
+<hr>
 
 <br>
 
